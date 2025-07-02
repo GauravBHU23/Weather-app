@@ -4,9 +4,11 @@
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
+
 body {
   background-image: url(rainy-weather-wallpaper-preview.jpg);
 }
+
 .card {
   width: 90%;
   max-width: 470px;
@@ -24,6 +26,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
 .search input {
   border: 0;
   outline: 0;
@@ -79,7 +82,7 @@ body {
   text-align: center;
   font-size: 36px;
   font-weight: 700;
-  color:white;
+  color: black;
   margin-bottom: 20px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -95,25 +98,31 @@ body {
 .search button:hover {
   background-color: blue;
 }
+
 .search button img {
   width: 16px;
 }
+
 .search button:hover img {
   filter: brightness(0) invert(1);
 }
+
 .weather-icon {
   width: 170px;
   margin-top: 30px;
 }
+
 .weather h1 {
   font-size: 80px;
   font-weight: 500;
 }
+
 .weather h2 {
   font-size: 45px;
   font-weight: 400;
   margin-top: -10px;
 }
+
 .details {
   display: flex;
   align-items: center;
@@ -121,11 +130,13 @@ body {
   padding: 0 20px;
   margin-top: 50px;
 }
+
 .col {
   display: flex;
   align-items: center;
   text-align: left;
 }
+
 .col img {
   width: 40px;
   margin-right: 10px;
@@ -136,9 +147,11 @@ body {
   font-size: 28px;
   margin-top: -6px;
 }
+
 .weather {
   display: none;
 }
+
 /* .error {
   text-align: left;
   margin-left: 10px;
@@ -181,11 +194,15 @@ footer {
   font-style: italic;
   opacity: 1;
 }
+
 .error {
-  display: none; /* hidden by default */
+  display: none;
+  /* hidden by default */
   text-align: center;
-  background: blue; /* light red background */
-  color: white;                    /* red text */
+  background: blue;
+  /* light red background */
+  color: white;
+  /* red text */
   border: 1px solid white;
   padding: 12px 20px;
   margin: 20px auto 0;
@@ -200,8 +217,15 @@ footer {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-10px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -210,4 +234,3 @@ footer {
     padding: 10px 15px;
   }
 }
-
