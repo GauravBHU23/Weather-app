@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(rainy-weather-wallpaper-preview.jpg);
+}
+.card {
+  width: 90%;
+  max-width: 470px;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  color: #fff;
+  margin: 100px auto 0;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search input {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  color: #555;
+  padding: 10px 25px;
+  height: 60px;
+  border-radius: 20px;
+  flex: 1;
+  margin-right: 16px;
+  font-size: 18px;
+}
+
+
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.search input {
+  flex: 1;
+  min-width: 0;
+}
+
+.search button {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  border-radius: 20px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover effect */
+.search button:hover {
+  background-color: #00bfff;
+}
+
+.search button img {
+  width: 20px;
+}
+
+.main-heading {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color:white;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: pop 1s ease-out;
+}
+
+
+
+
+
+
+
+.search button:hover {
+  background-color: blue;
+}
+.search button img {
+  width: 16px;
+}
+.search button:hover img {
+  filter: brightness(0) invert(1);
+}
+.weather-icon {
+  width: 170px;
+  margin-top: 30px;
+}
+.weather h1 {
+  font-size: 80px;
+  font-weight: 500;
+}
+.weather h2 {
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.col img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.humidity,
+.wind {
+  font-size: 28px;
+  margin-top: -6px;
+}
+.weather {
+  display: none;
+}
+/* .error {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 14px;
+  margin-top: 10px;
+  display: none;
+} */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  font-style: italic;
+  background: linear-gradient(135deg, red, green);
+  padding: 10px 20px;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.search input:hover {
+  background-color: #d0f0ff;
+}
+
+.search input:focus {
+  background-color: #c0eaff;
+  border: 2px solid red;
+}
+
+.search input::placeholder {
+  color: green;
+  font-style: italic;
+  opacity: 1;
+}
+.error {
+  display: none; /* hidden by default */
+  text-align: center;
+  background: blue; /* light red background */
+  color: white;                    /* red text */
+  border: 1px solid white;
+  padding: 12px 20px;
+  margin: 20px auto 0;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(255, 77, 77, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+  transition: all 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media screen and (max-width: 600px) {
+  .error {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
+
